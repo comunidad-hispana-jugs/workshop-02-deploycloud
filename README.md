@@ -1,9 +1,9 @@
 # workshop-02-deploycloud
 
 
-**Tema:** xxxx
+**Tema:** 
 
-Taller sobre xxx.
+Taller sobre Microservicios con Spring Boot y Spring Cloud.
 
 
 **Fecha:** Abril 28. 2018
@@ -16,6 +16,8 @@ Taller sobre xxx.
 
 * Nombre[(@_twitter)](https://twitter.com/xxxx): José esss.
 
-**Slides:** xxxxxx
+**Slides:** 
+
+
 
 **Repositorio Github:** https://github.com/comunidad-hispana-jugs/workshop-02-deploycloud
