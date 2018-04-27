@@ -9,18 +9,18 @@ import demo.domain.Jug;
 import demo.repository.JugRepository;
 
 @RestController
-public class TeamController {
+public class JugController {
 
 	@Autowired
 	JugRepository jugRepository;
 	
-	@RequestMapping("/teams")
-	public Iterable<Jug> getTeams() {
+	@RequestMapping("/jugs")
+	public Iterable<Jug> getJugs() {
 		return jugRepository.findAll();
 	}
 	
-	@RequestMapping("/teams/{id}")
-	public Jug getTeam(@PathVariable Long id){
+	@RequestMapping("/jugs/{id}")
+	public Jug getJug(@PathVariable Long id){
 		return jugRepository.findOne(id);
 	}
 	

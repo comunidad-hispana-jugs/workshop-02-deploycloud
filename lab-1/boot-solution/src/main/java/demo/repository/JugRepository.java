@@ -5,7 +5,7 @@ import org.springframework.data.rest.core.annotation.RestResource;
 
 import demo.domain.Jug;
 
-@RestResource(path="teams", rel="team")
-public interface TeamRepository extends CrudRepository<Jug,Long>{
+@RestResource(path="jugs", rel="jug")
+public interface JugRepository extends CrudRepository<Jug,Long>{
 
 }

@@ -7,6 +7,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import static org.hamcrest.Matchers.*;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,38 +42,38 @@ public class ApplicationTests {
 	}
 	
 	@Test
-	public void teamsRetrieve() throws Exception {
+	public void jugsRetrieve() throws Exception {
 
 		//	Ensure that everything works when we do a GET for all teams:
-		mockMvc.perform(get("/teams"))
+		mockMvc.perform(get("/jugs"))
 		.andExpect(status().isOk())
 		.andExpect(jsonPath("$[0].id").value(1))	
-		.andExpect(jsonPath("$[0].name").value("Globetrotters"))	
-		.andExpect(jsonPath("$[0].location").value("Harlem"))	
-		.andExpect(jsonPath("$[0].players[*].name", containsInAnyOrder("Dizzy","Buckets","Big Easy")))
+		.andExpect(jsonPath("$[0].name").value("Peru JUG"))
+		.andExpect(jsonPath("$[0].location").value("Peru"))
+		.andExpect(jsonPath("$[0].members[*].name", containsInAnyOrder("Jose Diaz","Eddu Melendez","Ytalo Borja")))
 		;
 	}
 
 	@Test
-	public void teamRetrieve() throws Exception {
+	public void jugRetrieve() throws Exception {
 
 		//	Ensure that everything works when we do a GET for a specific team.
-		mockMvc.perform(get("/teams/1"))
+		mockMvc.perform(get("/jugs/1"))
 		.andExpect(status().isOk())
 		.andExpect(jsonPath("$.id").value(1))	
-		.andExpect(jsonPath("$.name").value("Globetrotters"))	
-		.andExpect(jsonPath("$.location").value("Harlem"))	
-		.andExpect(jsonPath("$.players[*].name", containsInAnyOrder("Dizzy","Buckets","Big Easy")))
+		.andExpect(jsonPath("$.name").value("Peru JUG"))
+		.andExpect(jsonPath("$.location").value("Peru"))
+		.andExpect(jsonPath("$.members[*].name", containsInAnyOrder("Jose Diaz","Eddu Melendez","Ytalo Borja")))
 		;
 	}
 
 	@Test
-	public void playerRetrieve() throws Exception {
+	public void memberRetrieve() throws Exception {
 
 		//	Ensure that everything works when we do a GET for a specific team.
-		mockMvc.perform(get("/teams/1/players/2"))
+		mockMvc.perform(get("/jugs/1/members/2"))
 		.andExpect(status().isOk())
-		.andExpect(jsonPath("$.name").value("Buckets"))	
+		.andExpect(jsonPath("$.name").value("Eddu Melendez"))
 		;
 	}
 

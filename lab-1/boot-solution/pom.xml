@@ -9,12 +9,12 @@
 	<packaging>jar</packaging>
 
 	<name>lab-1-boot-solution</name>
-	<description>Solution to Lab 1, demonstrating Spring Boot, Data, REST.</description>
+	<description>Solución a Lab 1, demostrando Spring Boot, Data, REST.</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.2.RELEASE</version>
+		<version>1.5.12.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 

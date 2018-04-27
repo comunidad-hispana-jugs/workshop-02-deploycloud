@@ -5,21 +5,21 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Player {
+public class Member {
 
 	@Id
 	@GeneratedValue
 	Long id;
 	String name;
-	String position;
+	String rol;
 	
 	
-	public Player() {
+	public Member() {
 		super();
 	}	
-	public Player(String name, String position) {
+	public Member(String name, String rol) {
 		this();
-		this.position = position;
+		this.rol = rol;
 		this.name = name;
 	}
 	
@@ -35,12 +35,10 @@ public class Player {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getPosition() {
-		return position;
+	public String getRol() {
+		return rol;
 	}
-	public void setPosition(String position) {
-		this.position = position;
+	public void setRol(String rol) {
+		this.rol = rol;
 	}
-	
-	
 }

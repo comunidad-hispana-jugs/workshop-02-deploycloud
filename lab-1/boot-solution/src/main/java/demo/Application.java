@@ -11,14 +11,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import demo.domain.Player;
-import demo.domain.Team;
-import demo.repository.TeamRepository;
+import demo.domain.Member;
+import demo.domain.Jug;
+import demo.repository.JugRepository;
 
 @SpringBootApplication
 public class Application {
 
-	@Autowired TeamRepository teamRepository;
+	@Autowired
+    JugRepository jugRepository;
 	
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
@@ -26,17 +27,17 @@ public class Application {
     
     @PostConstruct
 	public void init() {
-		List<Team> list = new ArrayList<>();
+		List<Jug> list = new ArrayList<>();
 
-		Set<Player> set = new HashSet<>();
-		set.add(new Player("Big Easy", "Showman"));
-		set.add(new Player("Buckets", "Guard"));
-		set.add(new Player("Dizzy", "Guard"));
+		Set<Member> set = new HashSet<>();
+		set.add(new Member("Jose Diaz", "Leader"));
+		set.add(new Member("Eddu Melendez", "Co Leader"));
+		set.add(new Member("Ytalo Borja", "Member"));
 		
-		list.add(new Team("Harlem", "Globetrotters", set));
-		list.add(new Team("Washington","Generals",null));
+		list.add(new Jug("Peru", "Peru JUG", set));
+		list.add(new Jug("Colombia","Barranquilla JUG",null));
 
-		teamRepository.save(list);
+		jugRepository.save(list);
 	}    
     
 }

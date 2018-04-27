@@ -12,7 +12,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @Entity
 @XmlRootElement
-public class Team {
+public class Jug {
 
 	@Id
 	@GeneratedValue
@@ -22,18 +22,18 @@ public class Team {
 	String mascot;
 	
 	@OneToMany(cascade=CascadeType.ALL)
-	@JoinColumn(name="teamId")
-	Set<Player> players;
+	@JoinColumn(name="jugId")
+	Set<Member> members;
 	
 	
-	public Team() {
+	public Jug() {
 		super();
 	}
-	public Team(String location, String name, Set<Player> players) {
+	public Jug(String location, String name, Set<Member> members) {
 		this();
 		this.name = name;
 		this.location = location;
-		this.players = players;
+		this.members = members;
 	}
 	
 	public Long getId() {
@@ -60,11 +60,11 @@ public class Team {
 	public void setMascot(String mascot) {
 		this.mascot = mascot;
 	}
-	public Set<Player> getPlayers() {
-		return players;
+	public Set<Member> getMembers() {
+		return members;
 	}
-	public void setPlayers(Set<Player> players) {
-		this.players = players;
+	public void setMembers(Set<Member> members) {
+		this.members = members;
 	}
 	
 	
