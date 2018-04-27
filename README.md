@@ -24,3 +24,14 @@ Actualmente trabaja para Avantica (empresa de software Costarricense) en sus ofi
 
 
 **Repositorio Github:** https://github.com/comunidad-hispana-jugs/workshop-02-deploycloud
+
+**Instrucciones:**
+
+En el directorio [instrucciones](instrucciones) encontrara las indicaciones de como realizar los ejercicios y las herramientas que se hacen necesario descargar/instalar
+
+* [Lab 0 - Configuración](instrucciones/lab0.md)
+* [Lab 1 - Spring Boot](instrucciones/lab1.md)
+* [Lab 3 - Crear un Servidor Spring Cloud Config y Cliente](instrucciones/lab3.md)
+* [Lab 4 - Crea un Spring Cloud Eureka Server y Cliente](instrucciones/lab4.md)
+
+
