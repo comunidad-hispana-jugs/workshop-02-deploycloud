@@ -14,18 +14,15 @@ import org.springframework.web.client.RestTemplate;
 
 
 @Controller
-public class SentenceController {
+public class DcVsMarvelController {
 
 	@Autowired DiscoveryClient client;
 	
-	@RequestMapping("/sentence")
+	@RequestMapping("/dcvsmarvel")
 	public @ResponseBody String getSentence() {
 	  return String.format("%s %s %s %s %s.",
-		  getWord("LAB-4-SUBJECT"),
-		  getWord("LAB-4-VERB"),
-		  getWord("LAB-4-ARTICLE"),
-		  getWord("LAB-4-ADJECTIVE"),
-		  getWord("LAB-4-NOUN") );
+		  getWord("LAB-4-DC"),
+		  getWord("LAB-4-MARVEL") );
 	}
 
 	public String getWord(String service) {

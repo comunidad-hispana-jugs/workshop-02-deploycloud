@@ -6,14 +6,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class WordController {
+public class HeroeController {
 
-	@Value("${words}") String words;
+	@Value("${heroes}") String heroes;
 	
 	@RequestMapping("/")
 	public @ResponseBody String getWord() {
-		String[] wordArray = words.split(",");
-		int i = (int)Math.round(Math.random() * (wordArray.length - 1));
-		return wordArray[i];
+		String[] heroeArray = heroes.split(",");
+		int i = (int)Math.round(Math.random() * (heroeArray.length - 1));
+		return heroeArray[i];
 	}
 }

@@ -2,37 +2,18 @@
 # itself a different name when registering with Eureka
 ---
 spring:
-  profiles: sentence
+  profiles: dcvsmarvel
   application:
-    name: lab-4-sentence
+    name: lab-4-dcvsmarvel
     
 ---
 spring:
-  profiles: subject
+  profiles: dc
   application:
-    name: lab-4-subject
+    name: lab-4-dc
   
 ---
 spring:
-  profiles: verb
+  profiles: marvel
   application:
-    name: lab-4-verb
-
----
-spring:
-  profiles: article
-  application:
-    name: lab-4-article
-
----
-spring:
-  profiles: adjective
-  application:
-    name: lab-4-adjective
-
----
-spring:
-  profiles: noun
-  application:
-    name: lab-4-noun
-    
+    name: lab-4-marvel
