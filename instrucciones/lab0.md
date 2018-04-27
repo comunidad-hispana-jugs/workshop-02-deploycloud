@@ -11,4 +11,4 @@
 9. Instala Docker [https://www.docker.com/community-edition](https://www.docker.com/community-edition) y Docker Compose [https://docs.docker.com/compose/install/#prerequisites](https://docs.docker.com/compose/install/#prerequisites).
 
 Nota:
-- Los proyectos con sufijo "solution" tienen la inteción de ilustrar la versión finalizada de cada laboratorio. Debemos intentar hacer cada laboratorio sin saltar a la solución, en caso estes tarde o atrasado, usa este recurso para ponerte al día. 
+- Los proyectos con sufijo "solution" tienen la intención de ilustrar la versión finalizada de cada laboratorio. Debemos intentar hacer cada laboratorio sin saltar a la solución, en caso estes tarde o atrasado, usa este recurso para ponerte al día. 
