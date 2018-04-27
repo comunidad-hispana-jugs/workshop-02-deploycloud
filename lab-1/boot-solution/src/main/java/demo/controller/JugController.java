@@ -5,22 +5,23 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import demo.domain.Team;
-import demo.repository.TeamRepository;
+import demo.domain.Jug;
+import demo.repository.JugRepository;
 
 @RestController
 public class TeamController {
 
-	@Autowired TeamRepository teamRepository;
+	@Autowired
+	JugRepository jugRepository;
 	
 	@RequestMapping("/teams")
-	public Iterable<Team> getTeams() {
-		return teamRepository.findAll();
+	public Iterable<Jug> getTeams() {
+		return jugRepository.findAll();
 	}
 	
 	@RequestMapping("/teams/{id}")
-	public Team getTeam(@PathVariable Long id){
-		return teamRepository.findOne(id);
+	public Jug getTeam(@PathVariable Long id){
+		return jugRepository.findOne(id);
 	}
 	
 }
