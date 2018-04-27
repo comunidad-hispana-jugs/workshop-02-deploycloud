@@ -1,4 +1,4 @@
-# workshop-02: Microservicios con SpringBoot, SpringCloud con Despliegue en Docker y Kubernetes
+# Workshop-02: Microservicios con SpringBoot, SpringCloud con Despliegue en Docker y Kubernetes
 
 
 **Tema:** 
