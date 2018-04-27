@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RefreshScope
-public class LuckyWordController {
-	 
-	@Value("${lucky-word}") String luckyWord;
-	  
-	  @RequestMapping("/lucky-word")
-	  public String showLuckyWord() {
-	    return "The lucky word is: " + luckyWord;
-	  }
+public class JugsPresentesController {
+
+	@Value("${jugs-presentes}") String jugsPresentes;
+
+	@RequestMapping("/jugs-presentes")
+	public String showJugsPresentes() {
+		return "Los Jugs presentes son: " + jugsPresentes;
+	}
 }

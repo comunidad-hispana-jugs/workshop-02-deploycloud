@@ -5,7 +5,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.PropertySource;
@@ -15,13 +14,14 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class IntegrationTests {
 
-	@Autowired LuckyWordController controller;
+	@Autowired
+    JugsPresentesController controller;
 	
 	@Test
 	public void contextLoads() {
 		//	Ensure that the context loads, the properties are loaded, and the lucky word
 		//	controller is correctly wired with the correct value:
-		Assert.assertTrue("The lucky word is: testing".equals(controller.showLuckyWord()));
+		Assert.assertTrue("Los Jugs presentes son: testing".equals(controller.showJugsPresentes()));
 	}
 
 	//	Load test properties to satisfy the lucky-word placeholder:

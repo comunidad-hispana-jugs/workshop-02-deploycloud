@@ -1,7 +1,7 @@
 ---
 spring:
   profiles:
-    active: northamerica
+    active: europa
   application:
     name: lab-3-client
   cloud:

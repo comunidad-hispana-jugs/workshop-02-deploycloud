@@ -69,7 +69,7 @@ server.port=8002
       @Value("${jugs-presentes}") String jugsPresentes;
   
       @RequestMapping("/jugs-presentes")
-      public String showLJugsPresentes() {
+      public String showJugsPresentes() {
         return "Los Jugs presentes son: " + jugsPresentes;
       }
     }
