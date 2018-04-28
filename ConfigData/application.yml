@@ -7,26 +7,13 @@ eureka:
 
 ---
 spring:
-  profiles: subject
-words: I,You,He,She,It
+  profiles: marvel
+words: Iron Man,Spiderman,Ant-man,Hulk,Thor
   
 ---
 spring:
-  profiles: verb
-words: ran,knew,had,saw,bought
+  profiles: dc
+words: Batman,Mujer Maravilla,Flash,Linterna Verde,Megamente
 
----
-spring:
-  profiles: article
-words: a,the
 
----
-spring:
-  profiles: adjective
-words: reasonable,leaky,suspicious,ordinary,unlikely
-
----
-spring:
-  profiles: noun
-words: boat,book,vote,seat,backpack,partition,groundhog
   

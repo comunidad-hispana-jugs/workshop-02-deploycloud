@@ -29,12 +29,12 @@ server:
   port: 8011  
 eureka:
   instance:
-    hostname: eureka-primary       
+    hostname: localhost      
   client:
     registerWithEureka: true
     fetchRegistry: true        
     serviceUrl:
-      defaultZone: http://eureka-secondary:8012/eureka/,http://eureka-tertiary:8013/eureka/
+      defaultZone: http://localhost:8012/eureka/,http://localhost:8013/eureka/
 
 ---
 spring:
@@ -45,12 +45,12 @@ server:
   port: 8012
 eureka:
   instance:
-    hostname: eureka-secondary       
+    hostname: localhost    
   client:
     registerWithEureka: true
     fetchRegistry: true        
     serviceUrl:
-      defaultZone: http://eureka-tertiary:8013/eureka/,http://eureka-primary:8011/eureka/
+      defaultZone: http://localhost:8013/eureka/,http://localhost:8011/eureka/
 
 ---
 spring:
@@ -61,9 +61,9 @@ server:
   port: 8013
 eureka:
   instance:
-    hostname: eureka-tertiary       
+    hostname: localhost     
   client:
     registerWithEureka: true
     fetchRegistry: true    
     serviceUrl:
-      defaultZone: http://eureka-primary:8011/eureka/,http://eureka-secondary:8012/eureka/      
+      defaultZone: http://localhost:8011/eureka/,http://localhost:8012/eureka/      
