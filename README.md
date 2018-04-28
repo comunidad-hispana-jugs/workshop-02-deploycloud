@@ -36,5 +36,6 @@ En el directorio [instrucciones](instrucciones) encontrara las indicaciones de c
 * [Lab 5 - Usando clientes Ribbon](instrucciones/lab5.md)
 * [Lab 6 - Usando clientes Feign](instrucciones/lab6.md)
 * [Lab 7 - Usando Hystrix Circuit Breakers](instrucciones/lab7.md)
-
+* [Lab 8 - Usando Spring Cloud Bus](instrucciones/lab8.md)
+* [Lab 9 - Simple API Gateway con Zuul](instrucciones/lab9.md)
 
