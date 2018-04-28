@@ -15,7 +15,7 @@ info:
 
 turbine:
   clusterNameExpression: new String("default")
-  appConfig: sentence,subject,verb,article,adjective,noun
+  appConfig: dcvsmarvel,marvel,dc
 
 management:
   port: 8990  
