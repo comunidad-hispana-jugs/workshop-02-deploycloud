@@ -20,7 +20,7 @@ public class DcVsMarvelController {
 	
 	@RequestMapping("/dcvsmarvel")
 	public @ResponseBody String getSentence() {
-	  return String.format("%s %s %s %s %s.",
+	  return String.format("[DC] %s vs [MARVEL] %s.",
 		  getWord("LAB-4-DC"),
 		  getWord("LAB-4-MARVEL") );
 	}
