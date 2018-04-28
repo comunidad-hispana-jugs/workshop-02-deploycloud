@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @ConfigurationProperties(prefix="wordConfig")
-public class LuckyWordController {
+public class LuckyHeroeController {
 	 
 	String luckyWord;
 	String preamble;

@@ -5,22 +5,22 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 // TODO: Add @ConfigurationProperties here.
-public class LuckyWordController {
+public class LuckyHeroeController {
 	 
-	String luckyWord;
+	String luckyHeroe;
 	String preamble;
 	
-	@RequestMapping("/lucky-word")
-	public String showLuckyWord() {
-		return preamble + ": " + luckyWord;
+	@RequestMapping("/lucky-heroe")
+	public String showLuckyHeroe() {
+		return preamble + ": " + luckyHeroe;
 	}
 
-	public String getLuckyWord() {
-		return luckyWord;
+	public String getLuckyHeroe() {
+		return luckyHeroe;
 	}
 
-	public void setLuckyWord(String luckyWord) {
-		this.luckyWord = luckyWord;
+	public void setLuckyHeroe(String luckyHeroe) {
+		this.luckyHeroe = luckyHeroe;
 	}
 
 	public String getPreamble() {
