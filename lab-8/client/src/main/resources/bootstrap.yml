@@ -1,7 +1,7 @@
 ---
 spring:
   application:
-    name: lucky-word-client
+    name: lucky-heroe-client
   cloud:
     config:
       uri: http://localhost:8001
