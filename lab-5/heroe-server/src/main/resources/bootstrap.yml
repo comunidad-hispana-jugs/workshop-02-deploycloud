@@ -1,0 +1,25 @@
+# Properties active for ALL profiles:
+---
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8001	# Expect the Spring Cloud Config server to be running on localhost, port 8001.  
+server:
+  port: ${PORT:${SERVER_PORT:0}}   # Select any available port if neither port nor server port are specified.
+
+
+# Depending on which profile is active, the application gives 
+# itself a different name when registering with Eureka
+---
+spring:
+  profiles: marvel
+  application:
+    name: marvel
+  
+---
+spring:
+  profiles: dc
+  application:
+    name: dc
+
+    
