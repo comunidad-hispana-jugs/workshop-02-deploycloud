@@ -17,31 +17,12 @@ eureka:
 # itself a different name when registering with Eureka
 ---
 spring:
-  profiles: subject
+  profiles: marvel
   application:
-    name: subject
+    name: marvel
   
 ---
 spring:
-  profiles: verb
+  profiles: dc
   application:
-    name: verb
-
----
-spring:
-  profiles: article
-  application:
-    name: article
-
----
-spring:
-  profiles: adjective
-  application:
-    name: adjective
-
----
-spring:
-  profiles: noun
-  application:
-    name: noun
-    
+    name: dc

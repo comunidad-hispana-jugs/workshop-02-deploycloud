@@ -3,6 +3,6 @@
 # Allow thymeleaf template changes to reload:
 spring.thymeleaf.cache: false
 
-# Zuul-proxied services can be found by calling /services/subject, /services/verb, etc.
+# Zuul-proxied services can be found by calling /services/marvel, /services/dc, etc.
 zuul:
   prefix: /services

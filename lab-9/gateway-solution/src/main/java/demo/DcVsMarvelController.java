@@ -4,10 +4,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class SentenceController {
+public class DcVsMarvelController {
 
 	@RequestMapping("/")
 	public String sentence() {
-		return "sentence";
+		return "dcvsmarvel";
 	}
 }
