@@ -33,5 +33,8 @@ En el directorio [instrucciones](instrucciones) encontrara las indicaciones de c
 * [Lab 1 - Spring Boot](instrucciones/lab1.md)
 * [Lab 3 - Crear un Servidor Spring Cloud Config y Cliente](instrucciones/lab3.md)
 * [Lab 4 - Crea un Spring Cloud Eureka Server y Cliente](instrucciones/lab4.md)
+* [Lab 5 - Usando clientes Ribbon](instrucciones/lab5.md)
+* [Lab 6 - Usando clientes Feign](instrucciones/lab6.md)
+* [Lab 7 - Usando Hystrix Circuit Breakers](instrucciones/lab7.md)
 
 
