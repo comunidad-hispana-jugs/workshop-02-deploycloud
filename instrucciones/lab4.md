@@ -39,7 +39,7 @@
     En la siguiente sección vamos a crear varios clientes que trabajaran juntos para componer DC vs Marvel.  DC vs Marvel contendrá héroes de ambas franquicias.  2 servicios aleatoriamente generaran los heroes, y un tercer servicio ensamblara ellos para crear el universo DC vs Marvel.
 
 7. Crear una nueva aplicación web Spring Boot.  
-  - Nombrar el proyecto "lab-4-subject”, y usar este valor para el Artifact.  
+  - Nombrar el proyecto "lab-4-marvel”, y usar este valor para el Artifact.  
   - Usar el empaquetado JAR y la versión java 8.  
   - Usa la versión Boot 1.5.x o la última versión disponible.  
   - Agrega las dependencias web y actuator.
