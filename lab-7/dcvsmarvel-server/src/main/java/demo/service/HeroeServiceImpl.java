@@ -16,6 +16,7 @@ public class HeroeServiceImpl implements HeroeService {
 	
 	
 	@Override
+	
 	public Heroe getMarvel() {
 		return marvelClient.getHeroe();
 	}

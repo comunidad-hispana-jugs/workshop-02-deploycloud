@@ -21,7 +21,7 @@ public class DcVsMarvelController {
 	@RequestMapping("/dcvsmarvel")
 	public @ResponseBody String getSentence() {
 	  return 
-		"<h3>Lista de Heroes</h3><br/>" +	  
+		"<h3>FIGHT</h3><br/>" +	  
 		sentenceService.buildSentence() + "<br/><br/>" +
 		sentenceService.buildSentence() + "<br/><br/>"
 		;

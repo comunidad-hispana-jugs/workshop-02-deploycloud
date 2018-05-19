@@ -33,7 +33,7 @@ public class DcVsMarvelController {
 		String sentence = "Hay problemas para obtener la lista de heroes!";
 		try{
 			sentence =  
-				String.format("%s %s %s %s %s.",
+				String.format("[MARVEL] %s vs [DC] %s.",
 					getHeroe("MARVEL"),
 					getHeroe("DC") );			
 		} catch ( Exception e ) {

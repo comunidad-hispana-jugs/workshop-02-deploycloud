@@ -8,11 +8,16 @@ server:
   port: ${PORT:${SERVER_PORT:0}}   # Select any available port if neither port nor server port are specified.
 
 # Allow Eureka to recognize two apps of the same type on the same host as separate instances:
+#eureka:
+  #instance:
+    #metadataMap:
+      #instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 eureka:
-  instance:
-    metadataMap:
-      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8010/eureka/
+      #defaultZone: http://localhost:8011/eureka/,http://localhost:8012/eureka/,http://localhost:8013/eureka/
+      
 # Depending on which profile is active, the application gives 
 # itself a different name when registering with Eureka
 ---

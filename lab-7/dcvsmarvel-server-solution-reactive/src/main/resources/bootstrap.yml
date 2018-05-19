@@ -2,7 +2,7 @@
 ---
 spring:
   application:
-    name: sentence
+    name: dcvsmarvel
   cloud:
     config:
       uri: http://localhost:8001	# Expect the Spring Cloud Config server to be running on localhost, port 8001.  

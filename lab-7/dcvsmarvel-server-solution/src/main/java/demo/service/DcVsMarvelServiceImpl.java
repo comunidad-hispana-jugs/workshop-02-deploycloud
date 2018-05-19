@@ -18,7 +18,7 @@ public class DcVsMarvelServiceImpl implements DcVsMarvelService {
 	 */
 	public String buildSentence() {
 		return  
-			String.format("%s %s.",
+			String.format("%s vs %s.",
 					heroeService.getMarvel().getString(),
 					heroeService.getDc().getString() )
 			;

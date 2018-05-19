@@ -26,7 +26,7 @@ public class DcVsMarvelServiceImpl implements DcVsMarvelService {
 	public String buildSentence() {
 		String sentence = "Hay un problema obteniendo la lista de heroes!";
 		sentence =  
-			String.format("%s %s %s %s %s.",
+			String.format("[DC] %s vs [MARVEL]%s.",
 					dcService.getHeroe().getString(),
 					marvelService.getHeroe().getString() );
 		return sentence;
